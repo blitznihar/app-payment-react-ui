@@ -26,9 +26,6 @@ export default function CustomerSearch(props) {
     if (filteredResults.length === 0) {
       alert('No customers found');
     }
-    else {
-      alert(`${filteredResults.length} customer(s) found`);
-    }
     setSearchTerm(''); // Clear the search input after search
     props.onSearch(filteredResults); // Call the parent component's onSearch function if provided
   };
